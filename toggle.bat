@@ -49,6 +49,7 @@ set "second_port="
 
 @echo off
 title ScreenSwitch
+mode 40,5
 cls
 
 if not defined first_port (
