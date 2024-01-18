@@ -34,7 +34,9 @@
 ::
 :: And press the key you want to make as a shortcut.
 ::
-:: You can click on "Change icon..." to put the logo present in the script folder but it is optional.
+:: You can also rename it "ScreenSwitch".
+::
+:: You can click on "Change icon..." to put the logo present in the script.
 ::
 :: ==========================================================
 
