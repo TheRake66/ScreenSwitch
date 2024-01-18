@@ -46,6 +46,7 @@ set "second_port="
 :: ==========================================================
 
 
+
 @echo off
 title ScreenSwitch
 cls
@@ -71,16 +72,12 @@ if %errorlevel% equ %first_port% (
     set "message=Switching to the first video port..."
 )
 
-call :changeInput %message% %target_port%
+echo %message%
+ControlMyMonitor.exe /SetValue Primary 60 %target_port%
 timeout /nobreak /t 5 > nul
 exit
 
 :editScript
 echo You must specify the video ports.
 notepad.exe "%~dp0%~nx0"
-goto :eof
-
-:changeInput
-echo %1
-ControlMyMonitor.exe /SetValue Primary 60 %2
 goto :eof
