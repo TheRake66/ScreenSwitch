@@ -75,7 +75,6 @@ if %errorlevel% equ %first_port% (
 
 echo %message%
 ControlMyMonitor.exe /SetValue Primary 60 %target_port%
-timeout /nobreak /t 5 > nul
 exit
 
 :editScript
